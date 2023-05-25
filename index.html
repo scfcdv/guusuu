@@ -1,0 +1,13 @@
+<title>偶数ジェネレーター</title>
+<input type="number" id="num">
+<input type="button" value="送信" onclick="showEven()">
+<div id="even"></div>
+<script>
+function showEven() {
+var num = document.getElementById("num").value;
+var evens = [];
+for (var i = 0; i < num; i++) {
+if (i % 2 == 0) {
+evens.push(i);}}
+document.getElementById("even").innerHTML = evens.join(" ");}
+</script>
